@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600&display=swap');
+
+        .sophy-container {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .sophy-box {
+            background: #ffffff;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(197, 160, 89, 0.1);
+            border: 1px solid #eee;
+        }
+
+        .sophy-box h2 { 
+            color: #C5A059; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .sophy-section { margin-bottom: 25px; }
+        .sophy-label { display: block; margin-bottom: 10px; font-weight: 600; font-size: 0.9rem; color: #555; }
+        
+        .sophy-input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.3s;
+        }
+        .sophy-input:focus { border-color: #C5A059; }
+
+        .sophy-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: #C5A059;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .sophy-btn:hover { background-color: #a8874a; transform: translateY(-2px); }
+        
+        .sophy-affirmation {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-style: italic;
+            text-align: center;
+            color: #C5A059;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sophy-container">
+    <div class="sophy-box">
+        <h2>SophyClass Daily</h2>
+        
+        <div class="sophy-section">
+            <label class="sophy-label">오늘의 컨디션</label>
+            <select class="sophy-input">
+                <option>최고예요! 집중할 준비가 되었어요.</option>
+                <option>보통이에요. 차분하게 시작해볼게요.</option>
+                <option>조금 피곤하지만, 최선을 다할 거예요.</option>
+            </select>
+        </div>
+
+        <div class="sophy-section">
+            <label class="sophy-label">오늘의 학습 목표</label>
+            <textarea class="sophy-input" rows="3" placeholder="예: 오늘 배운 문법 개념 완벽히 이해하기"></textarea>
+        </div>
+
+        <button class="sophy-btn" onclick="alert('오늘도 SophyClass와 함께 성장해요!')">학습 기록 저장하기</button>
+
+        <div class="sophy-affirmation">
+            "나는 오늘도 어제보다 더 나은 내가 된다."
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
